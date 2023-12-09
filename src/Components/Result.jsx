@@ -19,10 +19,10 @@ const Result = () =>{
             setSrc(srcCode);
         },1000)
         return () => clearTimeout(timeout)
-    },[html,css,js])
+    },[html,css,js,srcCode])
     return(
         <Container>
-            <iframe srcDoc={src} title='Output' sandbox='allow-scriprts' frameBorder={0} width="100%" height="100%"/>
+            <iframe srcDoc={src} title='Output' sandbox='allow-modals allow-forms allow-popups allow-scripts allow-same-origin' frameBorder={0} width="100%" height="100%"/>
         </Container>
     )
 }

@@ -5,7 +5,7 @@ export const DataContext = createContext()
 const DataProvider = ({children}) =>{
     const [html,setHtml]=useState('');
     const [css,setCss]=useState('')
-    const [js,setJs]=useState('') 
+    const [js,setJs]=useState('')
     return(
         <DataContext.Provider value={{
             html,setHtml,
